@@ -39,10 +39,35 @@ jobs:
             exit 1
           fi
 
+      - name: Generate changelog (inline commit history)
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          PREV=$(git describe --tags --abbrev=0 "${TAG}^" 2>/dev/null || true)
+          {
+            echo "## Humble Apollo ${TAG}"
+            echo
+            if [ -n "$PREV" ]; then
+              echo "### Commits since ${PREV}"
+              RANGE="${PREV}..${TAG}"
+            else
+              echo "### Commits"
+              RANGE="${TAG}"
+            fi
+            echo
+            git log --no-merges --pretty=format:'- %s (%h) — %an' "$RANGE"
+            echo
+            if [ -n "$PREV" ]; then
+              echo
+              echo "**Full Changelog**: https://github.com/${GITHUB_REPOSITORY}/compare/${PREV}...${TAG}"
+            fi
+          } > CHANGELOG_RELEASE.md
+          echo "----- release body -----"
+          cat CHANGELOG_RELEASE.md
+
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: web-ext-artifacts/*.zip
-          generate_release_notes: true
+          body_path: CHANGELOG_RELEASE.md
           draft: false
           prerelease: false
