@@ -16,47 +16,42 @@
       "frame": "#1d2021",
       "frame_inactive": "#1d2021",
 
-      "tab_background_text": "#bdae93",
+      "tab_background_text": "#fdf4c1",
       "tab_selected": "#282828",
       "tab_text": "#fabd2f",
-      "tab_line": "#fabd2f",
+      "tab_line": "#1d2021",
       "tab_loading": "#fabd2f",
-      "tab_background_separator": "#1d2021",
+      "tab_background_separator": "#000000",
 
-      "toolbar": "#282828",
-      "toolbar_text": "#fbf1c7",
-      "toolbar_field": "#1d2021",
-      "toolbar_field_text": "#fbf1c7",
-      "toolbar_field_border": "#665c54",
-      "toolbar_field_focus": "#1d2021",
-      "toolbar_field_text_focus": "#fbf1c7",
+      "toolbar": "#1d2021",
+      "toolbar_text": "#fdf4c1",
+      "toolbar_field": "#000000",
+      "toolbar_field_text": "#fdf4c1",
+      "toolbar_field_focus": "#000000",
+      "toolbar_field_text_focus": "#fdf4c1",
       "toolbar_field_border_focus": "#fabd2f",
-      "toolbar_field_separator": "#665c54",
-      "toolbar_bottom_separator": "#665c54",
-      "toolbar_top_separator": "#1d2021",
-      "toolbar_vertical_separator": "#665c54",
+      "toolbar_field_separator": "#000000",
+      "toolbar_vertical_separator": "#282828",
 
-      "icons": "#bdae93",
+      "icons": "#fdf4c1",
       "icons_attention": "#fabd2f",
 
       "ntp_background": "#1d2021",
-      "ntp_text": "#fbf1c7",
+      "ntp_text": "#fdf4c1",
 
       "popup": "#3c3836",
-      "popup_border": "#665c54",
+      "popup_border": "#1d2021",
       "popup_highlight": "#7c6f64",
-      "popup_highlight_text": "#fbf1c7",
-      "popup_text": "#fbf1c7",
+      "popup_highlight_text": "#fdf4c1",
+      "popup_text": "#fdf4c1",
 
       "sidebar": "#1d2021",
-      "sidebar_border": "#665c54",
+      "sidebar_border": "#3c3836",
       "sidebar_highlight": "#7c6f64",
-      "sidebar_highlight_text": "#fbf1c7",
-      "sidebar_text": "#fbf1c7",
+      "sidebar_highlight_text": "#fdf4c1",
+      "sidebar_text": "#fdf4c1",
 
-      "bookmark_text": "#fbf1c7",
-      "button_background_hover": "#3c3836",
-      "button_background_active": "#504945"
+      "bookmark_text": "#fdf4c1"
     }
   }
 }

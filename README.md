@@ -75,22 +75,21 @@ Firefox only installs permanently-signed add-ons, and **[addons.mozilla.org](htt
 
 ## Palette — Gruvbox dark hard
 
-High-contrast dark theme built on the **hard** Gruvbox background (`#1d2021`), pushed for extra
-contrast: the brightest cream foreground (`#fbf1c7`), a lifted muted gray (`#bdae93`), more-defined
-borders (`#665c54`), and the signature Gruvbox yellow (`#fabd2f`) as the accent.
+Follows the original **Humble Gruvbox** colored components, with contrast raised by dropping the base
+to the **hard** Gruvbox background (`#1d2021`) and a pure-black URL bar (`#000000`) against the
+brightest cream text (`#fdf4c1`). The signature Gruvbox yellow (`#fabd2f`) is the single accent.
 
 ### Where each color goes
 
 | Preview | Role | Hex |
 | --- | --- | --- |
-| ![](https://placehold.co/40x20/1d2021/1d2021.png) | Frame / URL bar / sidebar / new tab | `#1d2021` |
-| ![](https://placehold.co/40x20/282828/282828.png) | Toolbar / selected tab | `#282828` |
-| ![](https://placehold.co/40x20/3c3836/3c3836.png) | Popups / button hover | `#3c3836` |
-| ![](https://placehold.co/40x20/665c54/665c54.png) | Borders / separators | `#665c54` |
-| ![](https://placehold.co/40x20/fbf1c7/fbf1c7.png) | Foreground text | `#fbf1c7` |
-| ![](https://placehold.co/40x20/bdae93/bdae93.png) | Muted text / icons | `#bdae93` |
-| ![](https://placehold.co/40x20/fabd2f/fabd2f.png) | Accent (yellow) — tab text, focus, attention | `#fabd2f` |
+| ![](https://placehold.co/40x20/1d2021/1d2021.png) | Frame / toolbar / sidebar / new tab | `#1d2021` |
+| ![](https://placehold.co/40x20/000000/000000.png) | URL / search bar | `#000000` |
+| ![](https://placehold.co/40x20/282828/282828.png) | Selected tab | `#282828` |
+| ![](https://placehold.co/40x20/3c3836/3c3836.png) | Popups | `#3c3836` |
 | ![](https://placehold.co/40x20/7c6f64/7c6f64.png) | Highlight background | `#7c6f64` |
+| ![](https://placehold.co/40x20/fdf4c1/fdf4c1.png) | Foreground text / icons | `#fdf4c1` |
+| ![](https://placehold.co/40x20/fabd2f/fabd2f.png) | Accent (yellow) — tab text, focus, attention | `#fabd2f` |
 
 ### Full Gruvbox dark hard reference
 
