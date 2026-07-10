@@ -3,6 +3,14 @@
   "version": "1.0",
   "name": "Humble Apollo",
   "description": "A high-contrast dark Firefox theme with the Apollo color palette, tuned like Gruvbox dark hard.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "humble-apollo@d0n9x1n",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "theme": {
     "colors": {
       "frame": "#090a14",
