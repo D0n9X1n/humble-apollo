@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Humble Apollo",
+  "description": "A high-contrast dark Firefox theme with the Apollo color palette, tuned like Gruvbox dark hard.",
+  "theme": {
+    "colors": {
+      "frame": "#090a14",
+      "frame_inactive": "#090a14",
+
+      "tab_background_text": "#c7cfcc",
+      "tab_selected": "#10141f",
+      "tab_text": "#ebede9",
+      "tab_line": "#a4dddb",
+      "tab_loading": "#e8c170",
+      "tab_background_separator": "#090a14",
+
+      "toolbar": "#10141f",
+      "toolbar_text": "#ebede9",
+      "toolbar_field": "#090a14",
+      "toolbar_field_text": "#ebede9",
+      "toolbar_field_border": "#394a50",
+      "toolbar_field_focus": "#090a14",
+      "toolbar_field_text_focus": "#ebede9",
+      "toolbar_field_border_focus": "#a4dddb",
+      "toolbar_field_separator": "#394a50",
+      "toolbar_bottom_separator": "#394a50",
+      "toolbar_top_separator": "#090a14",
+      "toolbar_vertical_separator": "#394a50",
+
+      "icons": "#c7cfcc",
+      "icons_attention": "#e8c170",
+
+      "ntp_background": "#090a14",
+      "ntp_text": "#ebede9",
+
+      "popup": "#10141f",
+      "popup_border": "#394a50",
+      "popup_highlight": "#3c5e8b",
+      "popup_highlight_text": "#ebede9",
+      "popup_text": "#ebede9",
+
+      "sidebar": "#090a14",
+      "sidebar_border": "#394a50",
+      "sidebar_highlight": "#3c5e8b",
+      "sidebar_highlight_text": "#ebede9",
+      "sidebar_text": "#ebede9",
+
+      "bookmark_text": "#ebede9",
+      "button_background_hover": "#202e37",
+      "button_background_active": "#394a50"
+    }
+  }
+}
