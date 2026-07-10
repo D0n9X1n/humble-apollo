@@ -1,7 +1,7 @@
 {
   "name": "humble-apollo",
   "version": "0.1.0",
-  "description": "A high-contrast dark Firefox theme with the Apollo color palette, tuned like Gruvbox dark hard.",
+  "description": "A high-contrast dark Firefox theme based on the Gruvbox dark hard palette.",
   "private": true,
   "license": "MIT",
   "repository": {
