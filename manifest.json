@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "Humble Apollo",
   "description": "A high-contrast dark Firefox theme based on the Gruvbox dark hard palette.",
   "browser_specific_settings": {
@@ -39,7 +39,7 @@
       "ntp_background": "#1d2021",
       "ntp_text": "#fdf4c1",
 
-      "popup": "#3c3836",
+      "popup": "#1d2021",
       "popup_border": "#1d2021",
       "popup_highlight": "#7c6f64",
       "popup_highlight_text": "#fdf4c1",
