@@ -13,15 +13,41 @@ The theme applies immediately and is removed when Firefox restarts. Use this for
 
 ## Package for distribution
 
-With [`web-ext`](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/):
+Uses [`web-ext`](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/)
+via npm scripts (CI runs these on every push):
 
 ```sh
-web-ext lint      # validate manifest against the theme schema
-web-ext build     # produce web-ext-artifacts/apollo-<version>.zip
+npm install
+npm run lint      # validate manifest against the theme schema
+npm run build     # produce web-ext-artifacts/humble_apollo-<version>.zip
 ```
 
-Rename the resulting `.zip` to `.xpi` (or submit the `.zip` to
-[addons.mozilla.org](https://addons.mozilla.org) for signing) to install permanently.
+## Releasing a new version to Firefox (AMO)
+
+Themes are distributed through [addons.mozilla.org](https://addons.mozilla.org) (AMO). Firefox only
+installs permanently-signed add-ons, and **AMO is the signer**.
+
+1. **Bump the version** in both `manifest.json` (`version`) and `package.json` (`version`). AMO
+   rejects re-uploading a version that already exists.
+2. **Build**: `npm run build` → `web-ext-artifacts/humble_apollo-<version>.zip`.
+3. **Submit** the `.zip`:
+   - **First release** — sign in at <https://addons.mozilla.org/developers/>, click *Submit a New
+     Add-on*, upload the zip, choose **listed** (public on AMO) or **unlisted** (self-distributed
+     `.xpi` you host yourself), and fill in the listing (name, summary, screenshots, categories).
+   - **Update** — open the add-on → *Manage* → *Upload New Version* → upload the new zip.
+   - **CLI alternative** — generate API credentials at
+     <https://addons.mozilla.org/developers/addon/api/key/> and run:
+     ```sh
+     npx web-ext sign --channel listed \
+       --api-key "$AMO_JWT_ISSUER" --api-secret "$AMO_JWT_SECRET"
+     ```
+     `--channel listed` publishes on AMO; `--channel unlisted` returns a signed `.xpi` for
+     self-hosting.
+4. **Review** — listed submissions go through Mozilla review (themes are usually fast/automated).
+   Once approved it's live at `addons.mozilla.org/firefox/addon/humble-apollo/`.
+
+> The `browser_specific_settings.gecko.id` in `manifest.json` (`humble-apollo@d0n9x1n`) is the
+> stable identity AMO ties every version to — don't change it between releases.
 
 ## Palette
 
